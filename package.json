@@ -1,0 +1,15 @@
+{
+  "name": "mikoa",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@bitbucket.org:wannabefro/mikoa.git",
+  "author": "Sam McTaggart <sam.mctaggart@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "koa": "^2.3.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
