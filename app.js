@@ -1,6 +1,7 @@
 const Koa = require('koa');
+const routes = require('./config/routes');
+
 const app = new Koa();
-const routes = require('./routes');
 
 routes.init(app);
 app.listen(3000);
