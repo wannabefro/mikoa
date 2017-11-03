@@ -1,7 +1,11 @@
 const router = require('koa-router')();
 
-router.get('/', async ctx => {
-  ctx.body = 'MIKOA';
-});
+const init = (app) => {
+  router.get('/', async ctx => {
+    ctx.body = 'MIKOA';
+  });
 
-module.exports = router.routes();
+  app.use(router.routes());
+};
+
+module.exports.init = init;
