@@ -1,8 +1,6 @@
 const Koa = require('koa');
 const app = new Koa();
+const routes = require('./routes');
 
-app.use(async ctx => {
-  ctx.body = 'MIKOA';
-});
-
+app.use(routes);
 app.listen(3000);
